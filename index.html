@@ -72,6 +72,11 @@ googleTerrain.addTo(map);
 
 var options = {
     position: 'topleft',
+    lengthUnit: {
+        factor: 0.539956803,    //  from km to nm
+            display: 'Nautical Miles',
+            decimal: 2
+    },
     circleMarker: {               // Leaflet circle marker options for points used in this plugin
         color: 'blue',
         radius: 2
@@ -82,7 +87,4 @@ L.control.ruler(options).addTo(map);
 </script>
 
 </html>
-
-
-
 
